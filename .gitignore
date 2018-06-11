@@ -1,0 +1,42 @@
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+nan-security-authorize/.project
+nan-security-authorize/.settings/
+nan-security-authorize/target/
+nan-security-browser/.settings/
+nan-security-browser/target/
+nan-security-app/.settings/
+nan-security-app/target/
+nan-security-core/.settings/
+nan-security-core/target/
+nan-security-demo/.settings/
+nan-security-demo/target/
+nan-security-authorize/.classpath
+*.project
+*.classpath
+*.factorypath
+nan-security/.settings/org.eclipse.m2e.core.prefs
+
+RemoteSystemsTempFiles
+
+.metadata
