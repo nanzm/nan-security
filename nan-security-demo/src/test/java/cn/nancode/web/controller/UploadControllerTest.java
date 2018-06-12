@@ -30,9 +30,12 @@ public class UploadControllerTest {
 
 	@Test
 	public void upload() throws Exception {
-		mockMvc.perform(fileUpload("/file")
-				.file(new MockMultipartFile("file", "喵喵.txt", "multipart/form-data", "我是内容 hello".getBytes("UTF-8"))))
-				.andExpect(status().isOk());
+		String result = mockMvc
+				.perform(fileUpload("/file").file(
+						new MockMultipartFile("file", "喵喵.txt", "multipart/form-data", "我是内容 hello".getBytes("UTF-8"))))
+				.andExpect(status().isOk()).andReturn().getResponse().getContentAsString();
+
+		System.out.println(result);
 
 	}
 }
